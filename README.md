@@ -23,7 +23,7 @@ and class imbalances.
 
 2. Data Cleaning & Feature Engineering (Transform)
 - Anomaly Correction: Handled impossible negative values in the Study_Hours column by converting them to 0.
-- Handling Nulls: * Dropped rows with missing primary grouping keys (Student_Type).
+- Handling Nulls: Dropped rows with missing primary grouping keys (Student_Type).
 - Applied Median Imputation for continuous numerical variables (Sleep_Hours, Study_Hours, Social_Media_Hours, Attendance) to avoid skewing from extreme values.
 - Applied Mode Imputation for discrete/categorical-like numericals (Exam_Pressure, Family_Support, Month).
 - Outlier Treatment: Detected and handled outliers using the Interquartile Range (IQR) method.
