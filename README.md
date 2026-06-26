@@ -48,9 +48,9 @@ and class imbalances.
 - Inconclusive Metrics: Based on the boxplot analysis, there was no distinct, measurable difference in Social_Media_Hours or Attendance between stressed and non-stressed students in this dataset.
 
 ## Files
-Student_Lifestyle_Analysis.ipynb — Main EDA notebook
-student-lifestyle.csv   — Raw dataset
-Cleaned_Student_Lifestyle.csv   — Cleaned output
+Student_Lifestyle_Analysis.ipynb    — Main EDA notebook
+student-lifestyle.csv               — Raw dataset
+Cleaned_Student_Lifestyle.csv       — Cleaned output
 
 ## 👤 Author
 Bikash Sahani
