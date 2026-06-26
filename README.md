@@ -23,21 +23,21 @@ and class imbalances.
 
 2. Data Cleaning & Feature Engineering (Transform)
 - Anomaly Correction: Handled impossible negative values in the Study_Hours column by converting them to 0.
--Handling Nulls: * Dropped rows with missing primary grouping keys (Student_Type).
--Applied Median Imputation for continuous numerical variables (Sleep_Hours, Study_Hours, Social_Media_Hours, Attendance) to avoid skewing from extreme values.
--Applied Mode Imputation for discrete/categorical-like numericals (Exam_Pressure, Family_Support, Month).
--Outlier Treatment: Detected and handled outliers using the Interquartile Range (IQR) method.
--Feature Engineering: Created categorical bins for easier analysis:
--Sleep_Category: Poor (<6 hrs), Adequate (6-8 hrs), Good (>8 hrs).
--Study_Category: Low (<3 hrs), Moderate (3-6 hrs), High (>6 hrs).
+- Handling Nulls: * Dropped rows with missing primary grouping keys (Student_Type).
+- Applied Median Imputation for continuous numerical variables (Sleep_Hours, Study_Hours, Social_Media_Hours, Attendance) to avoid skewing from extreme values.
+- Applied Mode Imputation for discrete/categorical-like numericals (Exam_Pressure, Family_Support, Month).
+- Outlier Treatment: Detected and handled outliers using the Interquartile Range (IQR) method.
+- Feature Engineering: Created categorical bins for easier analysis:
+- Sleep_Category: Poor (<6 hrs), Adequate (6-8 hrs), Good (>8 hrs).
+- Study_Category: Low (<3 hrs), Moderate (3-6 hrs), High (>6 hrs).
 
 3. Exploratory Data Analysis (EDA)
--Utilized Seaborn and Matplotlib to visualize distributions, boxplots, and correlation heatmaps.
--Analyzed stress levels across different subgroups (School, College, Working Students) and lifestyle categories.
+- Utilized Seaborn and Matplotlib to visualize distributions, boxplots, and correlation heatmaps.
+- Analyzed stress levels across different subgroups (School, College, Working Students) and lifestyle categories.
 4. Database Integration (Load)
--Saved the transformed dataset as Cleaned_Student_Lifestyle.csv.
--Established a local connection to a PostgreSQL database (EDA projects) using psycopg2.
--Successfully automated the loading of the cleaned DataFrame directly into a PostgreSQL table using SQLAlchemy.
+- Saved the transformed dataset as Cleaned_Student_Lifestyle.csv.
+- Established a local connection to a PostgreSQL database (EDA projects) using psycopg2.
+- Successfully automated the loading of the cleaned DataFrame directly into a PostgreSQL table using SQLAlchemy.
 
 ## Key Insights & Findings
 - Exam Pressure is the Primary Stressor: The correlation heatmap revealed that Exam_Pressure has the highest positive correlation (0.52) with student stress levels. Furthermore, 90.78% of students reporting an exam pressure level of 10 were stressed.
